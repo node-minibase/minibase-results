@@ -20,6 +20,38 @@ const minibaseResults = require('minibase-results')
 
 ## API
 
+### [minibaseResults](index.js#L45)
+> Initializes defaults for test runners
+
+**Params**
+
+* `opts` **{Object}**: optional options, merged with `app.options`    
+* `returns` **{Function}**: plugin function for [minibase][]'s `.use` method  
+
+**Example**
+
+```js
+var app = require('minibase')
+var results = require('minibase-results')
+
+console.log(app.options.settle) // => true
+console.log(app.tests) // => undefined
+console.log(app.stats) // => undefined
+
+app.use(results({ settle: false }))
+
+console.log(app.options.settle) // => false
+console.log(app.tests) // => []
+console.log(app._stream) // => through2 object mode stream
+console.log(app.stats.count) // => 0
+console.log(app.stats.pass) // => 0
+console.log(app.stats.fail) // => 0
+console.log(app.stats.skip) // => 0
+console.log(app.stats.todo) // => 0
+console.log(app.stats.runned) // => 0
+console.log(app.stats.anonymous) // => 0
+```
+
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/node-minibase/minibase-results/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
