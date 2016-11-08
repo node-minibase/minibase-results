@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "extend-shallow": "^2.0.1",
+    "minibase-create-plugin": "^1.0.0",
     "through2": "^2.0.1"
   },
   "devDependencies": {
@@ -29,7 +30,6 @@
     "coveralls": "^2.11.14",
     "cz-conventional-changelog": "^1.2.0",
     "minibase": "*",
-    "minibase-create-plugin": "^1.0.0",
     "mukla": "^0.4.7",
     "nyc": "^8.3.2",
     "pre-commit": "^1.1.3",
