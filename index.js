@@ -9,6 +9,7 @@
 
 var through2 = require('through2')
 var extend = require('extend-shallow')
+var createPlugin = require('minibase-create-plugin')
 
 /**
  * > Initializes defaults for test runners
@@ -43,7 +44,7 @@ var extend = require('extend-shallow')
  */
 
 module.exports = function minibaseResults (opts) {
-  return function minibaseResults (self) {
+  return createPlugin('minibase-results', function minibaseResults (self) {
     var stats = {
       pass: 0,
       fail: 0,
@@ -65,5 +66,5 @@ module.exports = function minibaseResults (opts) {
     self.define('testErrors', null)
     self.define('testContext', { context: {} })
     self.define('_stream', through2.obj())
-  }
+  })
 }
