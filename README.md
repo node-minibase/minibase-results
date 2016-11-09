@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/node-minibase">
+    <img height="250" width="250" src="https://avatars1.githubusercontent.com/u/23032863?v=3&s=250">
+  </a>
+</p>
+
 # [minibase-results][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] [![npm downloads][downloads-img]][downloads-url] 
 
 > Plugin for [minibase][] that adds useful initial properties for test results
@@ -20,7 +26,7 @@ const minibaseResults = require('minibase-results')
 
 ## API
 
-### [minibaseResults](index.js#L45)
+### [minibaseResults](index.js#L46)
 > Initializes defaults for test runners
 
 **Params**
