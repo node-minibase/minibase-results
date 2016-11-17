@@ -64,13 +64,38 @@
   },
   "verb": {
     "run": true,
-    "toc": true,
+    "toc": {
+      "render": true,
+      "method": "preWrite",
+      "maxdepth": 3,
+      "footer": ""
+    },
     "layout": "empty",
     "tasks": [
       "readme"
     ],
+    "related": {
+      "highlight": "mukla",
+      "list": [
+        "minibase",
+        "minibase-tests",
+        "minibase-visit",
+        "minibase-create-plugin",
+        "minibase-is-registered",
+        "base-task-alias"
+      ]
+    },
     "lint": {
       "reflinks": true
-    }
+    },
+    "reflinks": [
+      "base",
+      "collection-visit",
+      "commitizen",
+      "minibase",
+      "standard-version",
+      "verb",
+      "verb-generate-readme"
+    ]
   }
 }
