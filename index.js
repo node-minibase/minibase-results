@@ -7,7 +7,6 @@
 
 'use strict'
 
-var through2 = require('through2')
 var extend = require('extend-shallow')
 var createPlugin = require('minibase-create-plugin')
 
@@ -28,7 +27,6 @@ var createPlugin = require('minibase-create-plugin')
  *
  * console.log(app.options.settle) // => false
  * console.log(app.tests) // => []
- * console.log(app._stream) // => through2 object mode stream
  * console.log(app.stats.count) // => 0
  * console.log(app.stats.pass) // => 0
  * console.log(app.stats.fail) // => 0
@@ -65,6 +63,5 @@ module.exports = function minibaseResults (opts) {
     self.define('tests', [])
     self.define('testErrors', null)
     self.define('testContext', { context: {} })
-    self.define('_stream', through2.obj())
   })
 }

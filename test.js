@@ -48,7 +48,6 @@ test('should have initial default properties', function (done) {
   test.ok(app.testErrors === null)
   test.ok(app.testContext)
   test.ok(app.testContext.context)
-  test.ok(app._stream)
   test.strictEqual(app.stats.pass, 0)
   test.strictEqual(app.stats.fail, 0)
   test.strictEqual(app.stats.skip, 0)

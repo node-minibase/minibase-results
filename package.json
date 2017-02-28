@@ -22,8 +22,7 @@
   },
   "dependencies": {
     "extend-shallow": "^2.0.1",
-    "minibase-create-plugin": "^1.0.2",
-    "through2": "^2.0.1"
+    "minibase-create-plugin": "^1.0.2"
   },
   "devDependencies": {
     "commitizen": "~2.7.0",
