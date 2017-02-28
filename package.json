@@ -1,6 +1,6 @@
 {
   "name": "minibase-results",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Plugin for [minibase][] that adds useful initial properties for test results",
   "repository": "node-minibase/minibase-results",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
